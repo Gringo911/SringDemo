@@ -9,6 +9,8 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class Main {
     public static void main (String[]args){
 
+
+
         ApplicationContext context = new ClassPathXmlApplicationContext("ru.ivmit\\contex.xml");
         MessageRenderer renderer = (MessageRenderer) context.getBean("MessageRenderer");
         renderer.printMessage();
